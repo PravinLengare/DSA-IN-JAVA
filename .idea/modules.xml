@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exception_Handling/Exception_Handling.iml" filepath="$PROJECT_DIR$/Exception_Handling/Exception_Handling.iml" />
       <module fileurl="file://$PROJECT_DIR$/data_structures/Hash Table/Hash Table.iml" filepath="$PROJECT_DIR$/data_structures/Hash Table/Hash Table.iml" />
       <module fileurl="file://$PROJECT_DIR$/Linked List/Linked List.iml" filepath="$PROJECT_DIR$/Linked List/Linked List.iml" />

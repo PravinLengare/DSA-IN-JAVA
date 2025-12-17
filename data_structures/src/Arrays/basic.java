@@ -14,7 +14,6 @@ public class basic {
         for(int i = 0; i < arr.length; i++){
             System.out.println(arr[i]);
         }
-
         // if we have to access 3 element from array when we don't know the index of it.
         int index = -1;
         for (int i = 0 ; i < arr.length ; i++){
