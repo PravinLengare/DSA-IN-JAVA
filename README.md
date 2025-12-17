@@ -1,1 +1,1 @@
-# Data Structures Course
+# Data Structures Using JAVA
