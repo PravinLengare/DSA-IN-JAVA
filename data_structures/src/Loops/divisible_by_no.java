@@ -13,5 +13,6 @@ public class divisible_by_no {
             }
 
         }
+
     }
 }
