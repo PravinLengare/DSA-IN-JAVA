@@ -65,7 +65,7 @@ public class sum_digits {
         int number = n;
         while(n > 0){
             int lastDigit = n % 10;
-            sum += Math.pow(lastDigit,k);
+            sum += (int) Math.pow(lastDigit,k);
             n = n/10;
         }
         return sum == n;
@@ -78,7 +78,6 @@ public class sum_digits {
             n = n / 10;
         }
         return rev;
-
     }
     public static boolean palindromeNumber(int n ){
         int revNumber = reverseNumber(n);
@@ -125,7 +124,9 @@ public class sum_digits {
         }
         System.out.println("The factorial number is "+factorial);
     }
-    public static void fibonacciNumber(int n){
+    public static void fibonacciNumber(int n) throws Exception {
+        if (n == 0)
+           throw new Exception("Correct your input it should be from Term 1 !");
         int firstTerm = 0;
         int secondTerm = 1;
         int finalTerm = 0;
@@ -149,13 +150,15 @@ public class sum_digits {
                 sum += i;
             }
         }
-        if (sum == n){
+        if (sum == n)
             System.out.println("This is Perfect Number");
-        }
         else
             System.out.println("This is not Perfect Number");
     }
-    public static void fibonacciThreeTermsNumber(int n){
+    public static void fibonacciThreeTermsNumber(int n) throws Exception{
+        if (n == 0){
+            throw new Exception("Correct your input it should be from Term 1 !");
+        }
         int firstTerm = 0;
         int secondTerm = 1;
         int thirdTerm = 2;
@@ -182,23 +185,29 @@ public class sum_digits {
         }
         System.out.println("the result is : "+result);
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println("enter a no :");
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
+
         System.out.println("Sum of digits is : ");
         System.out.println(getSum(n));
+
         System.out.println("Digits count : ");
         System.out.println(countDigits(n));
+
         System.out.println("Product  : ");
         System.out.println(proSum(n));
+
         System.out.println("Armstrong number  : ");
         System.out.println(armStrong(n));
 
         System.out.println("Reverse of a number : ");
         System.out.println(reverseNumber(n));
+
         System.out.println("Palindrome of a number : ");
         System.out.println(palindromeNumber(n));
+
         System.out.println("First and Last Digit sum of a number : ");
         System.out.println(firstAndLastDigitSum(n));
 
