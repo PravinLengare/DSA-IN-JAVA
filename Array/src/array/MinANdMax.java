@@ -95,25 +95,48 @@ public class MinANdMax {
              System.out.println("Second Largest is : "+secondLargest);
     }
     public static void removeDuplicates(int []arr){
-        int count = 0;
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i+1; j < arr.length; j++) {
-                if (arr[i] == arr[j]){
-                    count++;
+            int i = 0;
+            for (int j = 1; j < arr.length; j++) {
+                if (arr[i] != arr[j]){
+                    i++;
+                    arr[i] = arr[j];
                 }
             }
+        for (int k = 0; k <= i; k++) {
+            System.out.print(arr[k] + " ");
         }
-        int []result = new int[count];
-        int resultIndex = 0;
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i+1; j < arr.length; j++) {
-                if (arr[i] == arr[j]){
-                    result[resultIndex] = arr[i];
-                    resultIndex++;
-                }
-            }
+
+    }
+    public static void reverseArrayWithExtraMemory(int []arr){
+        int n = arr.length;
+
+        int []ans = new int[n];
+        int k = n - 1;
+        for (int i = 0; i < n; i++) {
+            ans[k--] = arr[i];
         }
-        printArray(result);
+        printArray(ans);
+    }
+    public static void swap(int []arr,int i,int j){
+        int n = arr.length;
+
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+
+    }
+    public static void reverseArrayWithOutExtraMemory(int []arr){
+        int n = arr.length;
+
+        int j = n - 1;
+        int i = 0;
+
+        while (i < j){
+            swap(arr,i,j);
+            i++;
+            j--;
+        }
+        printArray(arr);
     }
     public static void main(String[] args) {
         System.out.println(" no of elements should be : ");
@@ -124,6 +147,7 @@ public class MinANdMax {
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
         }
+        /*
         minMax(arr);
 
         System.out.println("--------------------");
@@ -148,6 +172,16 @@ public class MinANdMax {
         System.out.println("Remove duplicate from the array : ");
         System.out.println("1.Using Extra Space find duplicate elements ");
         removeDuplicates(arr);
+        // System.out.println( removeDuplicatess(arr));
+
+
+
+         */
+        System.out.println("Reverse with extra space A array :");
+        reverseArrayWithExtraMemory(arr);
+        System.out.println();
+        System.out.println("Reverse without extra space A array :");
+        reverseArrayWithOutExtraMemory(arr);
 
     }
 }
