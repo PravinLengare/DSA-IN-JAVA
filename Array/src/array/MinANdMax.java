@@ -1,7 +1,6 @@
 package array;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 import static array.ArrayQuestions.printArray;
 
@@ -69,15 +68,6 @@ public class MinANdMax {
 
     }
     public static void secondLargestElement(int []arr){
-//        Arrays.sort(arr);
-//        int largest = arr[arr.length-1];
-//        int secondLargest = 0;
-//
-//        for (int i = 0; i < arr.length; i++) {
-//            if (arr[i] < largest){
-//                secondLargest = arr[i];
-//            }
-//        }
         int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
@@ -138,6 +128,32 @@ public class MinANdMax {
         }
         printArray(arr);
     }
+    public static void moveZeroToLast(int []arr){
+        int i = 0;
+        for (int j = 0; j < arr.length; j++) {
+            if (arr[j] != 0){
+                swap(arr,i,j);
+                i++;
+            }
+        }
+        printArray(arr);
+    }
+    public static ArrayList<Integer> checkLeader(int []arr){
+        ArrayList<Integer> ans = new ArrayList<>();
+        int n = arr.length;
+        int maxRight = arr[arr.length - 1];
+        ans.add(maxRight);
+
+        for (int i = n - 2; i >=0 ; i--) {
+            if (arr[i] >= maxRight){
+                ans.add(arr[i]);
+                maxRight = arr[i];
+            }
+        }
+        Collections.reverse(ans);
+        return ans;
+
+    }
     public static void main(String[] args) {
         System.out.println(" no of elements should be : ");
         Scanner scanner = new Scanner(System.in);
@@ -177,11 +193,21 @@ public class MinANdMax {
 
 
          */
+        /*
         System.out.println("Reverse with extra space A array :");
         reverseArrayWithExtraMemory(arr);
         System.out.println();
         System.out.println("Reverse without extra space A array :");
         reverseArrayWithOutExtraMemory(arr);
+        System.out.println();
+
+         */
+        System.out.println("Move zero to last : ");
+        moveZeroToLast(arr);
+
+        System.out.println();
+        System.out.println("Leader  : ");
+        System.out.println(checkLeader(arr));
 
     }
 }
