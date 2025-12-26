@@ -1,8 +1,8 @@
-package array;
+
 
 import java.util.Scanner;
 
-public class ArrayQuestions {
+public class ArrayQuestions1 {
     public static void printArray(int arr[]){
         int n = arr.length;
         System.out.println("The array is : ");
@@ -20,6 +20,8 @@ public class ArrayQuestions {
         System.out.println();
         System.out.println("The sum is : "+sum);
     }
+
+}
     public static void main(String[] args) {
         System.out.println(" no of elements should be : ");
         Scanner scanner = new Scanner(System.in);
@@ -28,8 +30,14 @@ public class ArrayQuestions {
         System.out.println("enter no of elements : ");
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
-        }
-        sumNumber(arr);
+//        }
+//        sumNumber(arr);
+//
+//        ArrayList<Integer> ans = new ArrayList<>();
+//        Map<Integer,Integer> a = new HashMap<>();
+//        a.getOrDefault(2,2);
+
+
     }
 
 

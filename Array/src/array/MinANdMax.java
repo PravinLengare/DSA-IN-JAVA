@@ -2,7 +2,7 @@ package array;
 
 import java.util.*;
 
-import static array.ArrayQuestions.printArray;
+import static array.RotateArray.printArray;
 
 public class MinANdMax {
     public static void minMax(int[] arr){
