@@ -163,7 +163,7 @@ public class MinANdMax {
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
         }
-        /*
+
         minMax(arr);
 
         System.out.println("--------------------");
@@ -188,11 +188,11 @@ public class MinANdMax {
         System.out.println("Remove duplicate from the array : ");
         System.out.println("1.Using Extra Space find duplicate elements ");
         removeDuplicates(arr);
-        // System.out.println( removeDuplicatess(arr));
+        //System.out.println(removeDuplicates(arr));
 
 
 
-         */
+
         /*
         System.out.println("Reverse with extra space A array :");
         reverseArrayWithExtraMemory(arr);
