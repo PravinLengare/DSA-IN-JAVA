@@ -99,11 +99,4 @@ public class PrefixSum {
         System.out.println("This is sub-array : "+checkSubArray(arr));
 
     }
-    /**
-
-     * sql
-     * js
-     * os
-     * 
-     */
 }
