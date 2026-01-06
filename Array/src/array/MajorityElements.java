@@ -3,7 +3,9 @@ package array;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-
+class A{
+    int a;
+}
 public class MajorityElements {
     public static int majorityElementUsingAlgorithm(int[] arr){
         int n = arr.length;
@@ -43,7 +45,7 @@ public class MajorityElements {
                 }
             }
             if (count > n/2){
-                return count;
+                return arr[i];
             }
             else {
                 count = 0;
@@ -60,16 +62,16 @@ public class MajorityElements {
         }
 
 
-        for (Map.Entry<Integer,Integer> entry : map.entrySet()){
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()){
             if (entry.getValue() > arr.length / 2) {
                 return entry.getKey();
             }
         }
         return -1;
 
-
     }
     public static void main(String[] args) {
+        /*
         System.out.println(" no of elements should be : ");
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -81,5 +83,13 @@ public class MajorityElements {
 
         System.out.println(majorityElement(arr));
         System.out.println("Using the algorithm : "+majorityElementUsingAlgorithm(arr));
+
+         */
+
+//
+//        int a;
+//        System.out.println(a);
+        A  a = new A();
+        System.out.println("value of a is : "+a.a);
     }
 }
