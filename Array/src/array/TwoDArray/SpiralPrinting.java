@@ -3,7 +3,6 @@ package array.TwoDArray;
 import java.util.Scanner;
 
 public class SpiralPrinting {
-
     public static void printSpiral(int[][] arr,int r,int c){
         int n = arr.length;
         int top = 0, bottom = r - 1;
@@ -59,7 +58,6 @@ public class SpiralPrinting {
             }
             System.out.println();
         }
-
         printSpiral(arr,r,c);
     }
 }
