@@ -18,5 +18,6 @@ public class ReverseString {
         String str = "Amol";
         StringBuilder sb = new StringBuilder(str);
         System.out.println(reverseString(sb));
+
     }
 }
