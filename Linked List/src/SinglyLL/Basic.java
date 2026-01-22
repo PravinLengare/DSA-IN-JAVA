@@ -27,11 +27,12 @@ public class Basic {
 
     }
     public static void rvPrint(Node head){
-        if (head == null){
+        Node temp = head;
+        if (temp == null){
             return;
         }
-        rvPrint(head.next);
-        System.out.println(head.data);
+        rvPrint(temp.next);
+        System.out.println(temp.data);
     }
     public static void main(String[] args) {
         Node a = new Node(3);
