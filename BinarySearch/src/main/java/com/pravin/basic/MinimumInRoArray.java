@@ -8,18 +8,38 @@ public class MinimumInRoArray {
     }
 
     private static int minInArray(int[] arr) {
+//        int low = 0,high = arr.length - 1;
+//        while (low < high){
+//
+//            int mid = low + (high - low) / 2;
+//            if (arr[high] > arr[mid]) {
+//                high = mid;
+//            }
+//            else {
+//               low = mid + 1;
+//            }
+//        }
+//        return arr[low];
         int low = 0,high = arr.length - 1;
-        while (low < high){
-
+        int min = Integer.MAX_VALUE;
+        while (low <= high){
             int mid = low + (high - low) / 2;
-            if (arr[high] > arr[mid]) {
-                high = mid;
+
+            if (arr[low] == arr[mid] && arr[mid] == arr[high]) {
+                low++;
+                high--;
+            }
+
+            if (arr[low] <= arr[mid]) {
+                min = Math.min(min,arr[low]);
+                low = mid + 1;
             }
             else {
-               low = mid + 1;
+                min = Math.min(min,arr[mid]);
+                high = mid - 1;
             }
         }
-        return arr[low];
+        return min;
     }
     private static int minInArrayWithDuplicates(int[] arr) {
         int low = 0,high = arr.length - 1;
