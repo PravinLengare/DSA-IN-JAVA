@@ -1,6 +1,6 @@
 package recursion.com.array;
 
-import sun.nio.cs.ArrayEncoder;
+
 
 public class SumOfArray {
     static int sumOfArray(int arr[],int idx){

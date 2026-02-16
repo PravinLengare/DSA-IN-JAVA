@@ -7,10 +7,17 @@
         <option value="$PROJECT_DIR$/Strings/pom.xml" />
         <option value="$PROJECT_DIR$/LinkedList/pom.xml" />
         <option value="$PROJECT_DIR$/BinarySearch/pom.xml" />
+        <option value="$PROJECT_DIR$/Recursion_Problems/pom.xml" />
+        <option value="$PROJECT_DIR$/Recursion_Striver/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Recursion_Problems/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_23_PREVIEW" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
