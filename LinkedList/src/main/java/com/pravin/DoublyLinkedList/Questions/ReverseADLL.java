@@ -67,17 +67,28 @@ public class ReverseADLL {
 //        a = reverseADLL(a);
 //        traverseDLL(a);
 
-//        a = reverseADLLWithSwapping(a);
-//        traverseDLL(a);
-
-
-        a = reverseADLLWithSwappingThePointer(a);
+        a = reverseADLLWithSwapping(a);
         traverseDLL(a);
+
+
+//        a = reverseADLLWithSwappingThePointer(a);
+//        traverseDLL(a);
 
 
     }
 
     private static Node reverseADLLWithSwappingThePointer(Node head) {
+//        Node curr = head;
+//        Node last = null;
+//
+//        while (curr!=null){
+//            last = curr.prev;
+//            curr.prev = curr.next;
+//            curr.next = last;
+//
+//            curr = curr.prev;
+//        }
+//        return last.next;           // O(N)   AND O(1)
         Node curr = head;
         Node last = null;
 
@@ -88,7 +99,11 @@ public class ReverseADLL {
 
             curr = curr.prev;
         }
-        return last.next;           // O(N)   AND O(1)
+        return last.prev;
+
+
+
+
     }
 
     private static Node traverseDLL(Node head) {
@@ -101,4 +116,6 @@ public class ReverseADLL {
         System.out.println("NULL");
         return head;
     }
+
+
 }
