@@ -26,6 +26,7 @@ public class Test {
         System.out.println(s2.hashCode());
         System.out.println(s.equals(s2));
         System.out.println(s == s2);
+        System.out.println(s2.intern()==s);
 
     }
 }
