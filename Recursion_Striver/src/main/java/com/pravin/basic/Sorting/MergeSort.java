@@ -1,4 +1,4 @@
-package com.pravin.basic;
+package com.pravin.basic.Sorting;
 
 import java.util.ArrayList;
 import java.util.List;

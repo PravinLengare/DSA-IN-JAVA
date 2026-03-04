@@ -1,4 +1,4 @@
-package com.pravin.basic;
+package com.pravin.basic.Sorting;
 
 import static com.pravin.basic.ReverseArray.swap;
 
