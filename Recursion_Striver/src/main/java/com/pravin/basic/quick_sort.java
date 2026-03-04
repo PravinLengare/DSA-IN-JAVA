@@ -4,7 +4,7 @@ import static com.pravin.basic.ReverseArray.swap;
 
 public class quick_sort {
     public static void main(String[] args) {
-        int arr[] = {3,1,2,4,1,5,2,6,4};
+        int arr[] = {4,6,2,5,7,9,1,3};
         int low = 0,high = arr.length - 1;
         quickSort(arr,low,high);
         System.out.println("The sorted array is  :");
