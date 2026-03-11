@@ -5,6 +5,7 @@ public class MaxSumSubArray {
         int []arr = {1,2,3,1,1,1,1,4,2,3};
         int k = 4;
         System.out.println("the mx long len is : "+maxSubArray(arr,k));
+        System.out.println("the mx sum is : "+maxSumSubArray(arr,k));
     }
 
     private static long maxSubArray(int[] arr, int k) {
@@ -26,5 +27,24 @@ public class MaxSumSubArray {
 
         }
         return maxLen;
+    }
+    private static int maxSumSubArray(int[] arr, int k) {
+        int left = 0;
+        int right = 0;
+        int sum = 0;
+        while (right < k){
+            sum += arr[right];
+            right++;
+        }
+        int maxSum = sum;
+        while (right < arr.length){
+            sum -= arr[left];
+            sum += arr[right];
+            maxSum = Math.max(maxSum,sum);
+
+            left++;
+            right++;
+        }
+        return maxSum;
     }
 }
