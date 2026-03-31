@@ -11,6 +11,7 @@
         <module name="BinarySearch" />
         <module name="Strings" />
         <module name="LinkedList" />
+        <module name="StackAndQueue" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
